@@ -9,8 +9,7 @@ import com.frankmoley.lil.landonhotel.data.repository.RoomRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDate;
-import java.util.Date;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -40,7 +39,7 @@ public class CLRunner implements CommandLineRunner {
         Optional<Guest> guest = this.guestRepository.findByCountryIgnoreCase("Moldova");
         System.out.println(guest);
 
-        System.out.println("=========RESERVATION=========");
+        System.out.println("=========RESERVATION==========");
         List<Reservation> reservations = this.reservationRepository.findAll();
         reservations.forEach(System.out::println);
 
