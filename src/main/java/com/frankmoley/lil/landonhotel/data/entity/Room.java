@@ -20,7 +20,7 @@ public class Room {
     @Column(name = "room_number")
     private String roomNumber;
     @Column(name = "bed_info")
-    private String bed_info;
+    private String bedInfo;
 
 
 }
